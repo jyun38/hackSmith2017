@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../static/hack.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+</head>
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="homeMenu">Home</a>
+  <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">CSC</a>
+            <div class="dropdown-content" style="margin-left: 40%">
+              <a href="111">CSC111</a>
+                <a href="212">CSC212</a>
+                <a href="231">CSC231</a>
+        		<a href="250">CSC250</a>
+        		<a href="contacts">TA Contacts</a>
+            </div>
+         </li><br>
+     
+           <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">SDS</a>
+            <div class="dropdown-content" style="margin-left: 40%">
+              <a href="noTAs">SDS235</a>
+                <a href="alternateTAs">SDS192</a>
+            </div>
+         </li><br>
+     
+           <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">MTH</a>
+            <div class="dropdown-content" style="margin-left: 40%">
+              <a href="noTAs">MTH153</a>
+                <a href="alternateTAs">MTH212</a>
+            </div>
+         </li>
+</div>
+<div id="main">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+  <div id="headTable">
+  <h1>TA Contacts</h1>
+  <table>
+    <tr>
+      <th>E-mail</th>
+      <th>Year</th> 
+    </tr>
+    <tr>
+      <td><a href="mailto:ametaxakakavouli@smith.edu">Artemis Metaxa</a></td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:pchaudhary@smith.edu">Prayasha Chaudhary</td>
+      <td>Class of 2019</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:vmcculloch@smith.edu">Val McCulloch</td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:eewing@smith.edu">Eleanor Ewing</td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:fsabry@smith.edu">Farida Sabry</td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:lswanson@smith.edu">Logan Swanson</td>
+      <td>Class of 2019</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:ayang@smith.edu">Alice Yang</td>
+      <td>Class of 2017</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:estephenson@smith.edu">Emma Stephenson</td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:emancuso@smith.edu">Riley Mancuso</td>
+      <td>Class of 2017</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:sxie@smith.edu">Stephanie Xie</td>
+      <td>Class of 2018</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:ytian@smith.edu">Youyou Tian</td>
+      <td>Class of 2017</td>
+    </tr>
+    <tr>
+      <td><a href="mailto:zkendall@smith.edu">Zoe Kendall</td>
+      <td>Class of 2017</td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+</html>
