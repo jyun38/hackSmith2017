@@ -1,0 +1,23 @@
+from sqlalchemy import Sequence
+from sqlalchemy import create_engine, ForeignKey
+from sqlalchemy import Column, Date, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship, backref
+
+engine = create_engine('sqlite:///database.db', echo=True)
+Base = declarative_base()
+
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    __tablename__ = 'todos'
+id = db.Column('todo_id', db.Integer, primary_key=True)
+    username = db.Column(db.String(60))
+    password = db.Column(db.String)
+    accesstype = db.Column(db.String)
+ 
+def __init__(self, username, password, accesstype):
+     self.username = username
+     self.password = password
+     self.accesstype = accesstype
+     
